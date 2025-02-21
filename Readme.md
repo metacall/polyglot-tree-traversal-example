@@ -36,7 +36,6 @@ sudo apt-get update
 sudo apt-get install -y --no-install-recommends \
   ca-certificates \
   git \
-  liburing-dev \
   cmake \
   curl
 ```
