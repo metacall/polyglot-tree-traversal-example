@@ -51,5 +51,5 @@ jobs:
     - name: Set path & Run MetaCall Example
       run: |
         export LOADER_LIBRARY_PATH="/usr/local/lib"
-        export LOADER_SCRIPT_PATH="/home/runner/work/polyglot-tree-traversal/polyglot-tree-traversal" # path of the scripts
+        export LOADER_SCRIPT_PATH="$(pwd)"
         metacallcli rootNode.py
