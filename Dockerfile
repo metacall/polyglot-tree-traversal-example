@@ -12,7 +12,6 @@ RUN apt-get update \
         git \
         npm \
         python3 \
-        liburing-dev \
         python3-dev \
     && rm -rf /var/lib/apt/lists/*
 
