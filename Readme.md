@@ -98,3 +98,16 @@ This will initiate the traversal of the polyglot tree, starting with the Python 
 - Ensure that MetaCall loaders for Python, Node.js, and C are enabled during the build.
 - Ensure that MetaCall ports for Nodejs and Python are enabled during the build.
 - Scripts should be placed in the directory specified by the `LOADER_SCRIPT_PATH` environment variable.
+
+## 🚀 Running with Docker
+You can run the Polyglot Tree Traversal Example inside a Docker container without installing dependencies manually.
+📌 Build the Docker Image
+Run the following command to build the Docker image:
+```sh
+  docker build --tag metacall/polyglot-tree-traversal-example .
+```
+▶️ Run the Container
+Execute the container with:
+```sh
+  docker run --rm -e LOADER_LIBRARY_PATH="/usr/local/lib" -e LOADER_SCRIPT_PATH="/root/polyglot-tree-traversal-example" metacall/polyglot-tree-traversal-example 
+```
