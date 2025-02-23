@@ -7,9 +7,7 @@ services:
     build: 
       dockerfile: Dockerfile
     container_name: polyglot-tree-traversal
-    environment:
-      - LOADER_LIBRARY_PATH=/usr/local/lib
-      - LOADER_SCRIPT_PATH=/root/polyglot-tree-traversal-example
+
     volumes:
       - .:/root/polyglot-tree-traversal-example
     command: ["metacallcli", "rootNode.py"]
