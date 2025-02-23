@@ -15,14 +15,6 @@ RUN apt-get update \
         python3-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Installing libtcc from source : C compiler
-RUN git clone https://github.com/TinyCC/tinycc.git \
-    && cd tinycc \
-    && ./configure --prefix=/usr \
-    && make \
-    && make install \
-    && cd .. \
-    && rm -rf tinycc
 
 # Set working directory
 WORKDIR /root
