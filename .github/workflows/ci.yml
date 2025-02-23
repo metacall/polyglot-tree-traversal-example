@@ -54,3 +54,8 @@ jobs:
         export LOADER_LIBRARY_PATH="/usr/local/lib"
         export LOADER_SCRIPT_PATH="/home/runner/work/polyglot-tree-traversal/polyglot-tree-traversal" # path of the scripts
         metacallcli rootNode.py
+
+    - name: Test Docker Build
+      run: |
+        docker build --tag metacall/polyglot-tree-traversal-example .
+        docker run --rm -e LOADER_LIBRARY_PATH="/usr/local/lib" -e LOADER_SCRIPT_PATH="/root/polyglot-tree-traversal-example" metacall/polyglot-tree-traversal-example
